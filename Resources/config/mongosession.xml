@@ -14,6 +14,8 @@
         <argument type="service" id="ebutik.mongosession.document_manager"/>
         <argument type="service" id="ebutik.mongosession.key_escaper"/>
         <argument>%session.storage.options%</argument>
+        <argument>%ebutik.mongosession.session.class%</argument>
+        <argument>ebutik.mongosession.session.prototype</argument>
 
         <call method="setContainer">
           <argument type="service" id="service_container" />
